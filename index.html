@@ -2,10 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fakeberg's Shifted Site</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c005e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            padding-bottom: 60px; /* Space for fixed bottom-left link */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1e1e2f;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-bottom: 4px solid #4b007e;
+        }
+        h1 {
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+        .subtitle {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #70a1ff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .dummy-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #70a1ff;
+            text-decoration: underline;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+        .dummy-link:hover {
+            color: #a4c2ff;
+        }
+        .yt-link {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            background-color: #a10000;
+            color: #ffffff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            z-index: 1000;
+        }
+        .yt-link:hover {
+            background-color: #6b0000;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new github.io website.</p>
+    <header>
+        <h1>This is my website</h1>
+        <p class="subtitle">This page is about me and my hack Shifted Courses:</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me:</h2>
+            <p><strong>I am Fakeberg.</strong> a romhacker in the SM64 romhacking community, not very known as for now.</p>
+        </section>
+
+        <section class="card">
+            <h2>About Shifted Courses</h2>
+            <p><strong>Shifted Courses</strong> makes you think this is normal SM64 (it is not!)</p>
+            <p>It's main theme is 15 completely new courses and the internal plexus of the castle leaaking where it shouldn't be.</p>
+            <ul>
+                <li><strong>Beginnings:</strong> Originally as a tutorial follow from Gamebyte, turned into one of my best and most ambitious sm64 modification i've ever made.</li>
+                <li>placeholder            </ul>
+            <a href="https://shifted-courses-sm64.fandom.com/" class="dummy-link">SC Fandom Wiki (more info there)</a>
+        </section>
+    </main>
+
+    <a href="https://youtube.com/@fakebergSC" target="_blank" rel="noopener noreferrer" class="yt-link">
+        my yt channel
+    </a>
 </body>
 </html>
